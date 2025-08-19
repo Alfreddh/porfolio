@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred B. - Développeur Web & Mobile | Portfolio</title>
+    <meta name="description" content="Portfolio d'Alfred B., développeur web et mobile passionné. Découvrez mes projets, compétences et services en développement web, mobile et UI/UX.">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alfredb-portfolio.com/">
+    <meta property="og:title" content="Alfred B. - Développeur Web & Mobile">
+    <meta property="og:description" content="Portfolio d'Alfred B., développeur web et mobile passionné. Découvrez mes projets et compétences.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop&crop=face">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://alfredb-portfolio.com/">
+    <meta property="twitter:title" content="Alfred B. - Développeur Web & Mobile">
+    <meta property="twitter:description" content="Portfolio d'Alfred B., développeur web et mobile passionné.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=630&fit=crop&crop=face">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/2.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="100">
+    
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Chargement...</span>
+            </div>
+            <p class="mt-3">Chargement...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#hero">
+                <i class="bi bi-code-slash me-2"></i>Alfred B.
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Compétences</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Témoignages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <button id="theme-toggle" class="btn btn-outline-primary btn-sm" aria-label="Basculer le thème">
+                            <i class="bi bi-moon-fill"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-shape hero-shape-1"></div>
+            <div class="hero-shape hero-shape-2"></div>
+            <div class="hero-shape hero-shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content" data-aos="fade-up">
+                        <h1 class="hero-title">
+                            Bonjour, je suis <span class="text-primary">Alfred B.</span>
+                        </h1>
+                        <h2 class="hero-subtitle">Développeur Web & Mobile</h2>
+                        <p class="hero-description">
+                            Passionné par la création d'expériences numériques exceptionnelles. 
+                            Je transforme vos idées en applications web et mobiles performantes.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="assets/cv-alfred-b.pdf" class="btn btn-primary btn-lg me-3" download>
+                                <i class="bi bi-download me-2"></i>Télécharger CV
+                            </a>
+                            <a href="#contact" class="btn btn-outline-primary btn-lg">
+                                <i class="bi bi-envelope me-2"></i>Me Contacter
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image" data-aos="fade-left">
+                        <div class="avatar-container">
+                            <img src="assets/img/2.png" alt="Alfred B. - Développeur Web & Mobile" class="avatar">
+                            <div class="avatar-decoration"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center" data-aos="fade-up">
+                        <h2 class="section-title">À propos de moi</h2>
+                        <p class="section-subtitle">Découvrez mon parcours et mes compétences</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="about-content">
+                        <h3>Passionné par le développement web et mobile</h3>
+                        <p>
+                            Avec plus de 5 ans d'expérience dans le développement web et mobile, 
+                            je combine créativité et expertise technique pour créer des solutions 
+                            innovantes qui répondent aux besoins de mes clients.
+                        </p>
+                        <p>
+                            Spécialisé dans les technologies modernes comme React, Flutter, et Laravel, 
+                            je m'efforce de livrer des applications performantes, accessibles et 
+                            visuellement attrayantes.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <div class="highlight-number">50+</div>
+                                <div class="highlight-label">Projets réalisés</div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-number">5+</div>
+                                <div class="highlight-label">Années d'expérience</div>
+                            </div>
+                            <div class="highlight-item">
+                                <div class="highlight-number">30+</div>
+                                <div class="highlight-label">Clients satisfaits</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop&crop=center" alt="Alfred B. au travail" class="img-fluid rounded-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-light skills-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center" data-aos="fade-up">
+                        <h2 class="section-title">Mes Compétences</h2>
+                        <p class="section-subtitle">Technologies et outils que je maîtrise</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <h3 class="skills-category">Frontend</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="skills-category">Backend & Mobile</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PHP/Laravel</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Flutter</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">MySQL</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="skills-category text-center mb-4">Outils & Technologies</h3>
+                    <div class="skills-badges" data-aos="fade-up">
+                        <span class="badge bg-primary me-2 mb-2">Bootstrap</span>
+                        <span class="badge bg-primary me-2 mb-2">Git</span>
+                        <span class="badge bg-primary me-2 mb-2">Docker</span>
+                        <span class="badge bg-primary me-2 mb-2">AWS</span>
+                        <span class="badge bg-primary me-2 mb-2">Figma</span>
+                        <span class="badge bg-primary me-2 mb-2">Adobe XD</span>
+                        <span class="badge bg-primary me-2 mb-2">PostgreSQL</span>
+                        <span class="badge bg-primary me-2 mb-2">MongoDB</span>
+                        <span class="badge bg-primary me-2 mb-2">REST API</span>
+                        <span class="badge bg-primary me-2 mb-2">GraphQL</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center" data-aos="fade-up">
+                        <h2 class="section-title">Mes Projets</h2>
+                        <p class="section-subtitle">Découvrez mes réalisations récentes</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="project-filters text-center mb-5" data-aos="fade-up">
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn active" data-filter="all">
+                            Tous
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="web">
+                            Web
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="mobile">
+                            Mobile
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="ui-ux">
+                            UI/UX
+                        </button>
+                        <button class="btn btn-outline-primary me-2 mb-2 filter-btn" data-filter="autres">
+                            Autres
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="projects-grid">
+                <!-- Project items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center" data-aos="fade-up">
+                        <h2 class="section-title">Mes Services</h2>
+                        <p class="section-subtitle">Solutions sur mesure pour vos besoins</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-globe"></i>
+                        </div>
+                        <h3>Développement Web</h3>
+                        <p>
+                            Création de sites web modernes, responsives et performants 
+                            avec les dernières technologies web.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-phone"></i>
+                        </div>
+                        <h3>Applications Mobile</h3>
+                        <p>
+                            Développement d'applications mobiles natives et cross-platform 
+                            pour iOS et Android.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-palette"></i>
+                        </div>
+                        <h3>Design UI/UX</h3>
+                        <p>
+                            Conception d'interfaces utilisateur intuitives et d'expériences 
+                            utilisateur optimisées.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-gear"></i>
+                        </div>
+                        <h3>API & Backend</h3>
+                        <p>
+                            Développement d'APIs robustes et de systèmes backend 
+                            évolutifs et sécurisés.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-graph-up"></i>
+                        </div>
+                        <h3>Optimisation SEO</h3>
+                        <p>
+                            Amélioration du référencement et de la visibilité 
+                            de vos projets web.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="bi bi-headset"></i>
+                        </div>
+                        <h3>Maintenance & Support</h3>
+                        <p>
+                            Maintenance continue, mises à jour et support technique 
+                            pour vos applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center" data-aos="fade-up">
+                        <h2 class="section-title">Témoignages</h2>
+                        <p class="section-subtitle">Ce que disent mes clients</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            "Alfred a transformé notre vision en une application web exceptionnelle. 
+                                            Son expertise technique et sa créativité ont dépassé nos attentes."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                                                                 <img src="https://images.iunsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face" alt="Marie Dubois" class="testimonial-avatar">
+                                        <div class="testimonial-info">
+                                            <h4>Marie Dubois</h4>
+                                            <p>CEO, TechStart</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            "Un développeur professionnel et fiable. Alfred a livré notre projet 
+                                            dans les délais avec une qualité exceptionnelle."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                                                                 <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="Jean Martin" class="testimonial-avatar">
+                                        <div class="testimonial-info">
+                                            <h4>Jean Martin</h4>
+                                            <p>Directeur Marketing, InnovCorp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <p>
+                                            "Excellent travail sur notre application mobile. L'interface est intuitive 
+                                            et les performances sont remarquables."
+                                        </p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                                                                 <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Sophie Bernard" class="testimonial-avatar">
+                                        <div class="testimonial-info">
+                                            <h4>Sophie Bernard</h4>
+                                            <p>Product Manager, MobileApp</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center" data-aos="fade-up">
+                        <h2 class="section-title">Blog</h2>
+                        <p class="section-subtitle">Mes derniers articles et réflexions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                                                         <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop&crop=center" alt="Article 1" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">15 Jan 2024</span>
+                                <span class="blog-category">Développement Web</span>
+                            </div>
+                            <h3>Les tendances du développement web en 2024</h3>
+                            <p>
+                                Découvrez les technologies et frameworks qui vont dominer 
+                                le développement web cette année.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                                                         <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop&crop=center" alt="Article 2" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">10 Jan 2024</span>
+                                <span class="blog-category">Mobile</span>
+                            </div>
+                            <h3>Flutter vs React Native : Comparaison 2024</h3>
+                            <p>
+                                Analyse approfondie des deux frameworks cross-platform 
+                                les plus populaires du moment.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                                                         <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop&crop=center" alt="Article 3" class="img-fluid">
+                        </div>
+                        <div class="blog-content">
+                            <div class="blog-meta">
+                                <span class="blog-date">05 Jan 2024</span>
+                                <span class="blog-category">UI/UX</span>
+                            </div>
+                            <h3>Principes de design pour une meilleure UX</h3>
+                            <p>
+                                Les fondamentaux du design d'interface pour créer 
+                                des expériences utilisateur exceptionnelles.
+                            </p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-header text-center" data-aos="fade-up">
+                        <h2 class="section-title">Contact</h2>
+                        <p class="section-subtitle">Discutons de votre projet</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-wrapper" data-aos="fade-up">
+                        <form id="contactForm" class="contact-form" action="" method="POST">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="name" class="form-label">Nom complet *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <div class="invalid-feedback">Veuillez saisir votre nom.</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <div class="invalid-feedback">Veuillez saisir un email valide.</div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Sujet</label>
+                                <input type="text" class="form-control" id="subject" name="subject">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Veuillez saisir votre message.</div>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <span class="btn-text">Envoyer le message</span>
+                                    <span class="btn-loading d-none">
+                                        <span class="spinner-border spinner-border-sm me-2"></span>
+                                        Envoi en cours...
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                        <div id="formSuccess" class="alert alert-success mt-3 d-none">
+                            <i class="bi bi-check-circle me-2"></i>
+                            Votre message a été envoyé avec succès !
+                        </div>
+                        <div id="formError" class="alert alert-danger mt-3 d-none">
+                            <i class="bi bi-exclamation-triangle me-2"></i>
+                            Une erreur s'est produite. Veuillez réessayer.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-brand">
+                        <h3><i class="bi bi-code-slash me-2"></i>Alfred B.</h3>
+                        <p>
+                            Développeur web et mobile passionné, créateur d'expériences 
+                            numériques exceptionnelles.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h4>Liens rapides</h4>
+                    <ul class="footer-links">
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#projects">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="login.html" target="_blank">Dashboard Messages</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h4>Réseaux sociaux</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <i class="bi bi-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-bottom">
+                        <p>&copy; <span id="currentYear"></span> Alfred B. Tous droits réservés.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Project Modal -->
+    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Détails du projet</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="projectModalContent">
+                        <!-- Content will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <a id="projectDemoLink" href="#" class="btn btn-primary" target="_blank">
+                        <i class="bi bi-eye me-2"></i>Voir la démo
+                    </a>
+                    <a id="projectCodeLink" href="#" class="btn btn-outline-primary" target="_blank">
+                        <i class="bi bi-code-slash me-2"></i>Voir le code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Alfred B.",
+        "jobTitle": "Développeur Web & Mobile",
+        "description": "Développeur web et mobile passionné, créateur d'expériences numériques exceptionnelles.",
+        "url": "https://alfredb-portfolio.com",
+        "sameAs": [
+            "https://linkedin.com/in/alfredb",
+            "https://github.com/alfredb",
+            "https://twitter.com/alfredb"
+        ],
+        "knowsAbout": [
+            "Développement Web",
+            "Développement Mobile",
+            "React",
+            "Flutter",
+            "Laravel",
+            "UI/UX Design"
+        ]
+    }
+    </script>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-firestore-compat.js"></script>
+    
+    <!-- Firebase Config -->
+    <script src="firebase-config.js"></script>
+    
+    <!-- Configuration -->
+    <script src="config.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
